@@ -7,32 +7,31 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <a class="main-header__logo" href="#">
           <img src="../source/img/logo/header-logo.svg" width="147" height="40" alt="Логотип сайта pink">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фотографии</a>
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="htmlacaremy.ru">HTML Academy</a>
+            <a class="main-nav__link" href="htmlacaremy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <section class="intro">
-        <div class="page__wrapper">
+        <div class="intro__wrapper">
           <p class="intro__title">Взгляните на жизнь иначе!</p>
-          <div class="intro__image">
-            <img src="../source/img/intro-phone.jpg" alt="Изображение телефона">
-          </div>
-          <a href="https://apps.apple.com" class="intro__download-button">Скачать приложение</a>
+          <a href="https://apps.apple.com" class="intro__download-link">Скачать приложение</a>
           <ul class="intro__app-list app-list">
             <li class="intro__app-item">
               <a class="intro__app-button" href="https://apps.apple.com">
@@ -103,19 +102,19 @@
       <section class="feedback">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="quotes"></div>
-        <blockquote class="feedback__item slider__item">
+        <blockquote class="feedback__item">
           <cite class="feedback__author-name">Николай Петров</cite>
           <p class="feedback__author-info">25 лет, водитель трамвая</p>
           <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
 
-        <blockquote class="feedback__item slider__item">
+        <blockquote class="feedback__item">
           <cite class="feedback__author-name">Николай Петров</cite>
           <p class="feedback__author-info">25 лет, водитель трамвая</p>
           <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
 
-        <blockquote class="feedback__item slider__item">
+        <blockquote class="feedback__item">
           <cite class="feedback__author-name">Николай Петров</cite>
           <p class="feedback__author-info">25 лет, водитель трамвая</p>
           <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -129,14 +128,13 @@
           <button class="slider__toggle">2</button>
           <button class="slider__toggle">3</button>
         </div>
-
       </section>
 
-      <section class="price slider">
+      <section class="price">
         <div class="price__wrapper">
           <h2 class="visually-hidden">Прайс</h2>
-          <div class="price__list slider__list">
-            <section class="price__item slider__item">
+          <div class="price__list">
+            <section class="price__item">
               <h3 class="visually-hidden">Базовый тариф</h3>
               <div class="price__title">
                 <span class="price__name">База</span>
@@ -155,7 +153,7 @@
               </ul>
             </section>
 
-            <section class="price__item slider__item">
+            <section class="price__item">
               <h3 class="visually-hidden">Стандартный тариф</h3>
               <div class="price__title">
                 <span class="price__name">Стандарт</span>
@@ -174,7 +172,7 @@
               </ul>
             </section>
 
-            <section class="price__item slider__item">
+            <section class="price__item">
               <h3 class="visually-hidden">Безлимитный тариф</h3>
               <div class="price__title">
                 <span class="price__name">Анлим</span>
@@ -207,18 +205,18 @@
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__list">
-            <div class="contacts__item">
-              <p class="contacts__title">Звоните:</p>
-              <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__title">Пишите:</p>
-              <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__title">Приезжайте в гости:</p>
-              <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
-            </div>
+            <dl class="contacts__item">
+              <dt class="contacts__title">Звоните:</p>
+              <dd class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </dl>
+            <dl class="contacts__item">
+              <dt class="contacts__title">Пишите:</p>
+              <dd class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </dl>
+            <dl class="contacts__item">
+              <dt class="contacts__title">Приезжайте в гости:</p>
+              <dd class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            </dl>
           </div>
       </section>
 
@@ -246,7 +244,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
