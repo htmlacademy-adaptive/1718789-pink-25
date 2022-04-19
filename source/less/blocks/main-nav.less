@@ -1,0 +1,53 @@
+.main-nav {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__logo-icon {
+  display: inline-block;
+  padding: 22px 0 21px 20px;
+  fill: @white;
+
+  &:hover path,
+  &:focus-visible {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: @fade-white;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  //display: none;
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  color: @white;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  background-color: @gray;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:hover,
+  &:focus-visible {
+    color: @pink;
+  }
+
+  &:active {
+    color: @fade-white;
+  }
+}

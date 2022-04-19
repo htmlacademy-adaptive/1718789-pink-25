@@ -1,0 +1,102 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-weight: 700;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+}
+
+.intro__download-link {
+  width: 280px;
+  min-height: 55px;
+  border-color: @white;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: @white;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+    color: @pink;
+    outline: none;
+  }
+
+  &:active {
+    color: @fade-pink;
+    background-color: @white;
+  }
+}
+
+.photo-editor__button {
+  width: 280px;
+  min-height: 55px;
+  font-size: 18px;
+  line-height: 18px;
+
+  &--submit {
+    color: @pink;
+    background-color: @white;
+    border-color: @pink;
+  }
+
+  &--submit:hover,
+  &--submit:focus-visible {
+    background-color: @pink;
+    color: @white;
+    outline: none;
+  }
+
+  &--submit:active {
+    color: @fade-white;
+    background-color: @pink;
+  }
+
+  &--reset {
+    color: fade(@gray, 10%);
+    border-color: fade(@gray, 10%);
+  }
+
+  &--reset:hover,
+  &--reset:focus-visible {
+    color: fade(@gray, 30%);
+    border-color: fade(@gray, 30%);
+  }
+
+  &--active {
+    background-color: fade(@gray, 30%);
+    border: none;
+    color: @fade-white;
+  }
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 276px;
+  min-height: 59px;
+  border: 2px solid @green;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: @white;
+  background-color: @green;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    background-color: @dark-green;
+    color: @fade-white;
+  }
+}

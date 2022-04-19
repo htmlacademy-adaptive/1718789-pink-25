@@ -1,0 +1,34 @@
+.slider__toggles {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: fade(@gray, 30%);
+  padding: 0;
+  box-sizing: content-box;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: fade(@gray, 60%);
+  }
+
+  &:active {
+    background-color: fade(@gray, 10%);
+  }
+
+  &--current {
+    outline: 3px solid @gray;
+    background-color: @white;
+  }
+}
