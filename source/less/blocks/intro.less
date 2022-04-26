@@ -32,6 +32,25 @@
 
 .intro__download-link {
   margin: 0 auto 38px auto;
+  width: 280px;
+  min-height: 55px;
+  border-color: @white;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: @white;
+    box-shadow: 0 5px 7px @rgba-black;
+    color: @pink;
+    outline: none;
+  }
+
+  &:active {
+    color: @fade-pink;
+    background-color: @white;
+  }
 }
 
 .intro__app-list {

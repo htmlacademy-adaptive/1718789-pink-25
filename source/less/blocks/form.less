@@ -1,0 +1,99 @@
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 44px;
+  background-color: @white;
+  color: @gray;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  border: none;
+
+  &--gray {
+    background-color: @ultra-light-gray;
+  }
+}
+
+.form__legend {
+  color: @pink;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+}
+
+.form__fieldset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__label-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__label-item:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.form__label-name {
+  color: @pink;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: @gray;
+  border: 2px solid @light-gray;
+  border-radius: 1px;
+  padding: 14px 20px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: @gray;
+  }
+
+  &:hover {
+    border-color: @gray;
+  }
+
+  &:focus {
+    border-radius: 1px;
+    border-color: @pink;
+    outline: none;
+  }
+}
+
+.form__textarea {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: @gray;
+  padding: 22px 20px;
+  border: 2px solid @light-gray;
+  border-radius: 1px;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    color: @dark-gray;
+  }
+}
