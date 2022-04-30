@@ -1,65 +1,158 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
 .page-body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .main-header {
-  background: url("../../img/header-background.jpg") no-repeat 50%;
-  background-size: 100%;
+  background: url("../../img/header-background.jpg") no-repeat 50% 0;
   color: #ffffff;
   background-color: #1a00ff;
-  position: relative;
+  min-height: 733px;
+}
+@media (min-width: 660px) {
+  .main-header {
+    min-height: 729px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header {
+    min-height: 853px;
+  }
+}
+.main-header--form {
+  min-height: 237px;
+}
+@media (min-width: 660px) {
+  .main-header--form {
+    min-height: 440px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header--form {
+    min-height: 394px;
+  }
+}
+.main-header--catalog {
+  min-height: 237px;
+}
+@media (min-width: 660px) {
+  .main-header--catalog {
+    min-height: 440px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header--catalog {
+    min-height: 394px;
+  }
 }
 .main-nav {
   background: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 .main-nav__toggle {
   display: none;
 }
-.main-nav__logo-icon {
-  display: inline-block;
-  padding: 22px 0 21px 20px;
+.main-nav__logo {
+  display: flex;
+  position: relative;
+  z-index: 10;
   fill: #ffffff;
+  height: 66px;
+  max-width: 280px;
+  margin: 0 auto;
 }
-.main-nav__logo-icon:hover path,
-.main-nav__logo-icon:focus-visible {
+.main-nav__logo:hover path,
+.main-nav__logo:focus-visible {
   fill: #D22856;
 }
-.main-nav__logo-icon:active path {
+.main-nav__logo:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
+@media (min-width: 660px) {
+  .main-nav__logo {
+    height: 110px;
+    max-width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__logo {
+    max-width: 940px;
+  }
+}
+.main-nav__logo-mobile {
+  margin-top: 22px;
+}
+@media (min-width: 660px) {
+  .main-nav__logo-mobile {
+    display: none;
+  }
+}
+.main-nav__logo-tablet {
+  display: none;
+}
+@media (min-width: 660px) {
+  .main-nav__logo-tablet {
+    display: inline-block;
+    margin-top: 27px;
+  }
+}
 .main-nav__list {
-  list-style: none;
-  text-decoration: none;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  top: 69px;
+  left: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+@media (min-width: 660px) {
+  .main-nav__list {
+    top: 110px;
+    left: 0;
+  }
+}
+.main-nav__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -69px;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+@media (min-width: 660px) {
+  .main-nav__list::before {
+    top: -110px;
+    height: 109px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__list::before {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__list {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-left: auto;
+    max-width: 940px;
+  }
 }
 .main-nav__link {
   display: block;
@@ -70,6 +163,8 @@
   font-weight: 700;
   background-color: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
+  text-align: center;
 }
 .main-nav__link:hover,
 .main-nav__link:focus-visible {
@@ -77,6 +172,16 @@
 }
 .main-nav__link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 1200px) {
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    background: none;
+    box-shadow: none;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -88,16 +193,36 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.intro--index {
+  background: url("../../img/intro-phone.png") no-repeat 50% 88px;
+}
+@media (min-width: 660px) {
+  .intro--index {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 119px;
+    background: url("../../img/intro-phone-tablet.png") no-repeat 50% 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro--index {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 98px;
+    padding-bottom: 130px;
+    background: url("../../img/intro-phone-desktop.png") no-repeat 0 100%;
+  }
+}
 .intro__title {
   display: block;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  line-height: 120%;
+  margin: 0 auto;
+  margin-top: 29px;
+  color: #ffffff;
 }
 .intro__title--index {
-  padding-top: 29px;
-  padding-bottom: 320px;
+  max-width: 220px;
+  padding-bottom: 315px;
 }
 .intro__title--catalog {
   padding-top: 36px;
@@ -107,9 +232,12 @@
   padding-top: 36px;
   padding-bottom: 51px;
 }
-.intro__download-wrapper {
-  background-color: #1D2631;
-  padding: 28px 20px 38px 20px;
+@media (max-width: 659px) {
+  .intro__download-wrapper {
+    background-color: #1D2631;
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
 }
 .intro__download-link {
   margin: 0 auto 38px auto;
@@ -257,6 +385,7 @@
   margin-bottom: 43px;
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
   color: #283645;
   text-align: center;
 }
@@ -556,4 +685,142 @@
 }
 .photo-editor__tools-button {
   border: none;
+}
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 44px;
+  background-color: #ffffff;
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  border: none;
+}
+.form__fieldset--gray {
+  background-color: #F2F2F2;
+}
+.form__legend {
+  color: #D22856;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+}
+.form__fieldset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form__label-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form__label-item:not(:last-child) {
+  margin-bottom: 29px;
+}
+.form__label-name {
+  color: #D22856;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.form__input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  padding: 14px 20px;
+}
+.form__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.form__input:hover {
+  border-color: #283645;
+}
+.form__input:focus {
+  border-radius: 1px;
+  border-color: #D22856;
+  outline: none;
+}
+.form__textarea {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding: 22px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+}
+.form__textarea::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@media (max-width: 659px) {
+  .page-wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 660px) {
+  .page-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .page-wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

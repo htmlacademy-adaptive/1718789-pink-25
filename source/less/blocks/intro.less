@@ -1,17 +1,35 @@
-// .intro {
-//   //background: url("../../img/intro-phone.jpg") no-repeat 20% 50%;
-// }
+.intro {
+  &--index {
+
+    background: url("../../img/intro-phone.png") no-repeat 50% 88px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 620px;
+      margin: 0 auto;
+      padding-top: 74px;
+      padding-bottom: 119px;
+      background: url("../../img/intro-phone-tablet.png") no-repeat 50% 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 940px;
+      margin: 0 auto;
+      padding-top: 98px;
+      padding-bottom: 130px;
+      background: url("../../img/intro-phone-desktop.png") no-repeat 0 100%;
+    }
+  }
+}
 
 .intro__title {
   display: block;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  line-height: 120%;
+  margin: 0 auto;
+  margin-top: 29px;
+  color: @white;
 
   &--index {
-    padding-top: 29px;
-    padding-bottom: 320px;
+    max-width: 220px;
+    padding-bottom: 315px;
   }
 
   &--catalog {
@@ -26,8 +44,11 @@
 }
 
 .intro__download-wrapper {
-  background-color: @dark-blue;
-  padding: 28px 20px 38px 20px;
+  @media (max-width: @mobile-width-only) {
+    background-color: @dark-blue;
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
 }
 
 .intro__download-link {
