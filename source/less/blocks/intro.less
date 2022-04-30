@@ -1,0 +1,99 @@
+.intro {
+  &--index {
+
+    background: url("../../img/intro-phone.png") no-repeat 50% 88px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 620px;
+      margin: 0 auto;
+      padding-top: 74px;
+      padding-bottom: 119px;
+      background: url("../../img/intro-phone-tablet.png") no-repeat 50% 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 940px;
+      margin: 0 auto;
+      padding-top: 98px;
+      padding-bottom: 130px;
+      background: url("../../img/intro-phone-desktop.png") no-repeat 0 100%;
+    }
+  }
+}
+
+.intro__title {
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
+  color: @white;
+
+  &--index {
+    max-width: 220px;
+    padding-bottom: 315px;
+  }
+
+  &--catalog {
+    padding-top: 36px;
+    padding-bottom: 84px;
+  }
+
+  &--form {
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+}
+
+.intro__download-wrapper {
+  @media (max-width: @mobile-width-only) {
+    background-color: @dark-blue;
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
+}
+
+.intro__download-link {
+  margin: 0 auto 38px auto;
+  width: 280px;
+  min-height: 55px;
+  border-color: @white;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: @white;
+    box-shadow: 0 5px 7px @rgba-black;
+    color: @pink;
+    outline: none;
+  }
+
+  &:active {
+    color: @fade-pink;
+    background-color: @white;
+  }
+}
+
+.intro__app-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 21px;
+}
+
+.intro__app-item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.intro__app-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}

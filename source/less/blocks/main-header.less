@@ -1,0 +1,38 @@
+.main-header {
+  background: url("../../img/header-background.jpg") no-repeat 50% 0;
+  color: @white;
+  background-color: @blue;
+  min-height: 733px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 729px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 853px;
+  }
+
+  &--form {
+    min-height: 237px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 440px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 394px;
+    }
+  }
+
+  &--catalog {
+    min-height: 237px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 440px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 394px;
+    }
+  }
+}
