@@ -17,3 +17,45 @@
 .photo-editor__tools-button {
   border: none;
 }
+
+.photo-editor__button {
+  width: 280px;
+  min-height: 55px;
+  font-size: 18px;
+  line-height: 18px;
+
+  &--submit {
+    color: @pink;
+    background-color: @white;
+    border-color: @pink;
+  }
+
+  &--submit:hover,
+  &--submit:focus-visible {
+    background-color: @pink;
+    color: @white;
+    outline: none;
+  }
+
+  &--submit:active {
+    color: @fade-white;
+    background-color: @pink;
+  }
+
+  &--reset {
+    color: fade(@gray, 10%);
+    border-color: fade(@gray, 10%);
+  }
+
+  &--reset:hover,
+  &--reset:focus-visible {
+    color: fade(@gray, 30%);
+    border-color: fade(@gray, 30%);
+  }
+
+  &--active {
+    background-color: fade(@gray, 30%);
+    border: none;
+    color: @fade-white;
+  }
+}

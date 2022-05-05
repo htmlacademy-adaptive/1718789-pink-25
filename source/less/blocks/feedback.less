@@ -1,6 +1,44 @@
 .feedback {
-  padding: 50px 20px 60px 20px;
+  padding-top: 50px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 109px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 193px;
+    padding-bottom: 41px;
+  }
+}
+
+.feedback__item {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      width: 79px;
+      height: 63px;
+      position: absolute;
+      top: -128px;
+      left: 305px;
+      background-image: url("../../img/feedback-quotes.svg");
+    }
+  }
 }
 
 .feedback__author-name {
@@ -11,13 +49,38 @@
   font-style: normal;
   margin: 0 0 31px 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-bottom: 17px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    margin-bottom: 17px;
+    order: 2;
+  }
 }
 
 .feedback__author-info {
   display: none;
-  font-size: 14px;
-  line-height: 30px;
-  color: @gray;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: @gray;
+    order: 3;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin-bottom: 41px;
+  }
 }
 
 .feedback__text {
@@ -26,16 +89,39 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 25px;
+      left: -145px;
+      background-image: url("../../img/feedback-left-arrow.svg");
+    }
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 25px;
+      right: -145px;
+      background-image: url("../../img/feedback-righ-arrow.svg");
+    }
+  }
 }
 
 .feedback__slider-button {
   display: none;
-}
-
-.feedback__item {
-  display: none;
-
-  &--current {
-    display: block;
-  }
 }

@@ -1,3 +1,23 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 207px;
+  margin-top: 49px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    min-height: 127px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 197px;
+  }
+}
+
 .footer__logo-image {
   &:hover path,
   &:focus-visible path {
