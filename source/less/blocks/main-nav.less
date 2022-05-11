@@ -1,13 +1,17 @@
 .main-nav {
-  background: rgba(0, 0, 0, 0.3);
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav__wrapper {
+  background: rgba(0, 0, 0, 0.3);
+
   @media (min-width: @desktop-width) {
     display: flex;
-    max-width: 940px;
-    margin: 0 auto;
+    min-width: 940px;
   }
 }
 
@@ -39,6 +43,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
     max-width: 940px;
   }
 }
