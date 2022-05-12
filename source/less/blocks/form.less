@@ -4,7 +4,8 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
   padding-top: 55px;
   padding-bottom: 55px;
 
@@ -48,7 +49,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 44px;
   font-size: 18px;
   line-height: 30px;
@@ -62,13 +63,18 @@
 }
 
 .form__fieldset-name {
+  margin: 0 auto 65px auto;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
+    width: 620px;
     padding: 0;
     outline: none;
     order: -1;
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
     flex-basis: 470px;
     padding-right: 35px;
     box-sizing: border-box;
@@ -84,16 +90,20 @@
 }
 
 .form__fieldset-achievements {
+  margin: 0 auto 65px auto;
+
   @media (max-width: @mobile-width-only) {
-    background: @ultra-light-gray;
+    background-color: @ultra-light-gray;
   }
 
   @media (min-width: @tablet-width) {
+    width: 620px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 940px;
+    width: 940px;
   }
 }
 
@@ -105,12 +115,17 @@
 }
 
 .form__fieldset-contacts {
+  margin: 0 auto 65px auto;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
+    width: 620px;
     padding: 46px 60px 27px;
     order: 1;
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
     flex-basis: 940px;
     display: flex;
   }
@@ -137,26 +152,35 @@
   }
 }
 
-.form__mobile-wrapper {
-  background-color: @ultra-light-gray;
-}
-
 .form__fieldset-apps {
+  margin: 0 auto 65px auto;
+
+  @media (max-width: @mobile-width-only) {
+    background-color: @ultra-light-gray;
+  }
+
   @media (min-width: @tablet-width) {
+    width: 620px;
     order: 0;
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
     flex-basis: 470px;
   }
 }
 
 .form__fieldset-textarea {
+  margin: 0 auto;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
+    width: 620px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
     flex-basis: 940px;
   }
 }
@@ -284,7 +308,11 @@
 }
 
 .form__buttons {
+  margin: 0 auto;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
+    width: 620px;
     display: flex;
     align-items: center;
     margin-top: 43px;
@@ -293,6 +321,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
     margin-bottom: 0;
   }
 }
