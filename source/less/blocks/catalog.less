@@ -30,30 +30,72 @@
   }
 }
 
-.catalog__image-panorama {
-  display: block;
+.catalog__panorama-images {
+  position: relative;
   margin: 0 auto;
+  width: 320px;
+  height: 137px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 660px;
+    height: 509px;
   }
-}
-
-.catalog__image-panorama-tablet {
-  display: none;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-    display: block;
-  }
-}
-
-.catalog__image-panorama-desktop {
-  display: none;
-  margin: 0 auto;
 
   @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
+
+  &::after {
+    content: "панорама дня";
+    position: absolute;
     display: block;
+    color: @white;
+    text-transform: uppercase;
+    top: 0;
+    right: 20px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 13px 20px 14px 19px;
+    background-color: @pink;
+
+    @media (min-width: @tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+}
+
+.catalog__image-panorama {
+  &--mobile {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    margin: 0 auto;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
   }
 }
 
@@ -147,6 +189,14 @@
     padding: 0;
     grid-column: 1 / -1;
   }
+
+  &--panorama {
+    @media (min-width: @tablet-width) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      margin-bottom: 14px;
+    }
+  }
 }
 
 .catalog__like-text {
@@ -161,6 +211,12 @@
     order: 2;
     margin-left: auto;
     margin-right: 0;
+  }
+
+  &--panorama {
+    @media (min-width: @tablet-width) {
+      margin-left: 16px;
+    }
   }
 }
 

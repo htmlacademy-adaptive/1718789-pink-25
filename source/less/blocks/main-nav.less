@@ -1,22 +1,131 @@
 .main-nav {
   margin: 0 auto;
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-  }
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__wrapper {
-  background: rgba(0, 0, 0, 0.3);
-
   @media (min-width: @desktop-width) {
     display: flex;
-    min-width: 940px;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
 .main-nav__toggle {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 15;
+  width: 92px;
+  height: 66px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  & .main-nav__list {
+    @media (max-width: @tablet-width-only) {
+      display: none;
+    }
+  }
+
+  & .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+    box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+    border-radius: 1px;
+
+    @media (min-width: @tablet-width) {
+      top: 43px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  & .main-nav__toggle:hover::before {
+    background-color: @pink;
+    box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+  }
+
+  & .main-nav__toggle:active::before {
+    background-color: fade(@pink, 30%);
+    box-shadow: 0 10px 0 0 fade(@pink, 30%), 0 20px 0 0 fade(@pink, 30%);
+  }
+}
+
+.main-nav--opened {
+  background-color: @gray;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    height: 1px;
+    background-color: @black;
+
+    @media (min-width: @tablet-width) {
+      top: 109px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  & .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 33px;
+      width: 30px;
+      height: 3px;
+      background-color: @white;
+
+      @media (min-width: @tablet-width) {
+        top: 51px;
+      }
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: @pink;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(@pink, 30%);
+    }
+  }
 }
 
 .main-nav__logo {
@@ -43,8 +152,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
-    max-width: 940px;
+    margin: 0;
   }
 }
 
@@ -59,62 +167,83 @@
 .main-nav__logo-tablet {
   display: none;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     display: inline-block;
     margin-top: 27px;
   }
 }
 
-.main-nav__list {
-  list-style-type: none;
+.main-nav__logo-desktop {
   display: none;
-  position: absolute;
-  top: 69px;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 
-  @media (min-width: @tablet-width) {
-    top: 110px;
-    left: 0;
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    margin-top: 27px;
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
   }
 
-  &::before {
+  .main-nav__wrapper {
+    @media (max-width: @tablet-width-only) {
+      position: relative;
+      background-color: @gray;
+    }
+  }
+
+  .main-nav__list {
+    @media (max-width: @tablet-width-only) {
+      display: block;
+      position: relative;
+    }
+  }
+
+  &::after {
     content: "";
     display: block;
     position: absolute;
-    top: -69px;
-    left: 0;
+    top: 65px;
     width: 100%;
-    height: 68px;
-    background-color: @gray;
-    box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    height: 1px;
+    background-color: @black;
 
     @media (min-width: @tablet-width) {
-      top: -110px;
-      height: 109px;
+      top: 109px;
     }
 
     @media (min-width: @desktop-width) {
       display: none;
     }
   }
+}
+
+
+.main-nav__list {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
-    position: static;
     display: flex;
+    position: static;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: none;
     margin-left: auto;
-    max-width: 940px;
+    max-width: 620px;
   }
 }
 
 .main-nav__link {
   display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-decoration: none;
   color: @white;
   font-size: 18px;

@@ -126,3 +126,44 @@
     text-decoration: none;
   }
 }
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 33px;
+    background-color: @white;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+    @media (min-width: @tablet-width) {
+      height: 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 103px;
+    }
+  }
+
+  iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 200px;
+
+    @media (min-width: @tablet-width) {
+      height: 374px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 502px;
+    }
+  }
+}
