@@ -6,6 +6,10 @@
   background-position: 50% 120px;
   background-size: cover;
 
+  @media (max-width: @mobile-width-only) {
+    min-height: 1015px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../../img/index-gray-background-tablet.svg");
     background-repeat: no-repeat;
@@ -78,7 +82,7 @@
 
   @media (max-width: @mobile-width-only) {
     &:last-child {
-      padding-bottom: 279px;
+      padding-bottom: 347px;
     }
   }
 
