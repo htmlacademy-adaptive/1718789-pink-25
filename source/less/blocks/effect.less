@@ -3,6 +3,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding-bottom: 138px;
   }
 
   @media (min-width: @desktop-width) {
@@ -11,11 +12,12 @@
 }
 
 .effect__description {
-  min-height: 330px;
+  min-height: 370px;
   display: flex;
   background: url("../../img/timer-tablet.svg") no-repeat 0 100%;
 
   @media (min-width: @desktop-width) {
+    background: url("../../img/timer-desktop.svg") no-repeat 0 100%;
     min-height: 429px;
     background-size: 298px auto;
     background-position: 0 17px;
