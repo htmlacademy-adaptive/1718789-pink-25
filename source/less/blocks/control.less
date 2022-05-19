@@ -2,4 +2,84 @@
   display: block;
   position: relative;
   padding-left: 59px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 119px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid @light-gray;
+    box-sizing: border-box;
+    background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 60px;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      border-radius: 1px;
+    }
+  }
+
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::before {
+      border-color: @gray;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: @pink;
+    }
+  }
+}
+
+.control__input--checkbox:checked + .control__label {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 39px;
+    height: 39px;
+    top: -6px;
+    left: -58px;
+    background: url("../../img/form-checkmark.svg") no-repeat center;
+  }
+}
+
+
+.control__input--radio:checked + .control__label {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: -47px;
+    border-radius: 50%;
+    background-color: @pink;
+  }
 }
