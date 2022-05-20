@@ -17,8 +17,7 @@
   position: relative;
   margin: auto;
   width: 320px;
-  padding-top: 38px;
-  padding-bottom: 50px;
+  padding-top: 44px;
   background-color: @white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
@@ -26,10 +25,13 @@
 
   @media (min-width: @tablet-width) {
     width: 460px;
+    border-radius: 5px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
+    padding-left: 210px;
+    padding-right: 210px;
   }
 }
 
@@ -42,6 +44,12 @@
   margin: 0 auto;
   margin-bottom: 25px;
   max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 330px;
+  }
 }
 
 .modal__text {
@@ -51,10 +59,14 @@
   text-align: center;
   margin: 0 auto;
   max-width: 280px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .modal__button-wrapper {
-  margin-top: 34px;
   width: 100%;
   min-height: 163px;
   display: flex;
@@ -67,12 +79,13 @@
 .modal__button {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 52px;
 
   &--failure {
     margin-top: 41px;
   }
 
   &--success {
-    margin-top: 84px;
+    margin-top: 52px;
   }
 }

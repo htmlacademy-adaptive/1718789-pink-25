@@ -6,6 +6,10 @@
   background-position: 50% 120px;
   background-size: cover;
 
+  @media (max-width: @mobile-width-only) {
+    min-height: 1015px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../../img/index-gray-background-tablet.svg");
     background-repeat: no-repeat;
@@ -57,17 +61,18 @@
 
   @media (min-width: @desktop-width) {
     max-width: 430px;
+    margin-bottom: 72px;
   }
 }
 
 .advantages__phone-wrapper {
   @media (max-width: @mobile-width-only) {
-    background: url("../../img/advantages-iphone-mobile.png") no-repeat 50% 111%;
+    background: url("../../img/advantages-phone-mobile.png") no-repeat 50% 111%;
   }
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     display: flex;
-    background: url("../../img/advantages-iphone-tablet.png") no-repeat 0 79px;
+    background: url("../../img/advantages-phone-tablet.png") no-repeat 0 79px;
   }
 }
 
@@ -78,7 +83,7 @@
 
   @media (max-width: @mobile-width-only) {
     &:last-child {
-      padding-bottom: 279px;
+      padding-bottom: 347px;
     }
   }
 
@@ -112,6 +117,7 @@
 }
 
 .advantages__title {
+  order: 2;
   margin: 0;
   margin-bottom: 12px;
   font-size: 18px;
