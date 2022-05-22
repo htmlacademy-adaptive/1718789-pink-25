@@ -10,6 +10,13 @@
   }
 }
 
+.form__wrapper {
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
 .form__title {
   color: @gray;
   font-size: 14px;
@@ -232,6 +239,11 @@
 .form__fieldset-contacts .form__input {
   align-self: stretch;
   position: relative;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 70px;
+  }
 }
 
 .form__fieldset-contacts .form__input[type="tel"] {
@@ -389,6 +401,7 @@
 }
 
 .form__textarea {
+  resize: none;
   display: block;
   font-family: inherit;
   font-size: 18px;
@@ -440,6 +453,7 @@
 }
 
 .form__button {
+  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
