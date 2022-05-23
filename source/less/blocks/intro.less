@@ -1,14 +1,28 @@
 .intro {
   &--index {
 
-    background: url("../../img/intro-phone.png") no-repeat 50% 80px;
+    background: url("../img/intro-phone.png") no-repeat 50% 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-phone@2x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 80px;
+      background-size: auto 286px;
+    }
 
     @media (min-width: @tablet-width) {
       max-width: 620px;
       margin: 0 auto;
       padding-top: 74px;
       padding-bottom: 119px;
-      background: url("../../img/intro-phone-tablet.png") no-repeat 50% 100%;
+      background: url("../img/intro-phone-tablet.png") no-repeat 50% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/intro-phone-tablet@2x.png");
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: auto 545px;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -16,7 +30,14 @@
       margin: 0 auto;
       padding-top: 98px;
       padding-bottom: 130px;
-      background: url("../../img/intro-phone-desktop.png") no-repeat 0 100%;
+      background: url("../img/intro-phone-desktop.png") no-repeat 0 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/intro-phone-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: auto 645px;
+      }
     }
   }
 }
@@ -167,21 +188,21 @@
   display: block;
   width: 47px;
   height: 56px;
-  background-image: url("../../img/logo/intro-apple-logo.svg");
+  background-image: url("../img/logo/intro-apple-logo.svg");
 }
 
 .intro__android-icon {
   display: block;
   width: 43px;
   height: 47px;
-  background-image: url("../../img/logo/intro-android-logo.svg");
+  background-image: url("../img/logo/intro-android-logo.svg");
 }
 
 .intro__windows-icon {
   display: block;
   width: 44px;
   height: 41px;
-  background-image: url("../../img/logo/intro-microsoft-logo.svg");
+  background-image: url("../img/logo/intro-microsoft-logo.svg");
 }
 
 .intro__app-description {

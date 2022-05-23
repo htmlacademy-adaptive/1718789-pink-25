@@ -50,9 +50,11 @@
         <p class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="catalog__panorama">
           <div class="catalog__panorama-images">
-            <img class="catalog__image-panorama catalog__image-panorama--mobile" src="./img/catalog/catalog-panorama.jpg" alt="Фотография панорамы" width="320" height="137">
-            <img class="catalog__image-panorama catalog__image-panorama--tablet" src="./img/catalog/panorama-tablet.jpg" alt="Фотография панорамы" width="660" height="509">
-            <img class="catalog__image-panorama catalog__image-panorama--desktop" src="./img/catalog/panorama-desktop.jpg" alt="Фотография панорамы" width="1200" height="506">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x" width="1200" height="506">
+              <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
+              <img class="catalog__image-panorama catalog__image-panorama--mobile" src="img/catalog/panorama-catalog.jpg" alt="Фотография панорамы" width="320" height="137">
+            </picture>
           </div>
           <div class="page-wrapper">
             <div class="catalog__description catalog__description--panorama">
@@ -76,7 +78,11 @@
             <ul class="catalog__list">
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-car.jpg" alt="Фотография машины" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-1.jpg" srcset="img/catalog/photo-1@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Левон</p>
                   <p class="catalog__post-time">(5 часов назад)</p>
@@ -91,7 +97,11 @@
               </li>
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-drums.jpg" alt="Фотография барабанов" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-2.jpg" srcset="img/catalog/photo-2@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Антон</p>
                   <p class="catalog__post-time">(12 часов назад)</p>
@@ -106,7 +116,11 @@
               </li>
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-windows.jpg" alt="Фотография панорамной крыши" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-3.jpg" srcset="img/catalog/photo-3@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Борис</p>
                   <p class="catalog__post-time">(20 часов назад)</p>
@@ -121,7 +135,11 @@
               </li>
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-market.jpg" alt="Фотография рынка" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-4.jpg" srcset="img/catalog/photo-4@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Сергей</p>
                   <p class="catalog__post-time">(25 часов назад)</p>
@@ -136,7 +154,11 @@
               </li>
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-camping.jpg" alt="Фото похода" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.jpg 1x, img/catalog/photo-5-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.jpg 1x, img/catalog/photo-5-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-5.jpg" srcset="img/catalog/photo-5@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Максим</p>
                   <p class="catalog__post-time">(40 часов назад)</p>
@@ -151,7 +173,11 @@
               </li>
 
               <li class="catalog__item">
-                <img class="catalog__user-photo" src="./img/catalog/catalog-plane.jpg" alt="Фото самолета" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.jpg 1x, img/catalog/photo-6-desktop@2x.jpg 2x" width="300" height="400">
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.jpg 1x, img/catalog/photo-6-tablet@2x.jpg 2x" width="300" height="300">
+                  <img class="catalog__user-photo" src="img/catalog/photo-6.jpg" srcset="img/catalog/photo-6@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
+                </picture>
                 <div class="catalog__description">
                   <p class="catalog__user-name">Надежда</p>
                   <p class="catalog__post-time">(45 часов назад)</p>
@@ -173,7 +199,10 @@
         <div class="page-wrapper">
           <form class="photo-editor">
               <h2 class="visually-hidden">Загрузите свою фотографию!</h2>
-                <img class="photo-editor__image" src="./img/catalog/catalog-forest.jpg" alt="Фото пользователя для публикации" width="280" height="374">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/catalog/catalog-forest-tablet.jpg 1x, img/catalog/catalog-forest-tablet@2x.jpg 2x" width="300" height="400">
+                <img class="photo-editor__image" src="img/catalog/catalog-forest.jpg" srcset="img/catalog/catalog-forest@2x.jpg 2x" alt="Фото пользователя для публикации" width="280" height="374">
+              </picture>
                 <fieldset class="photo-editor__tools">
 
                   <ul class="photo-editor__tools-list">
