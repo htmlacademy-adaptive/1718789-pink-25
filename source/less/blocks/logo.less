@@ -1,0 +1,25 @@
+.logo__mobile {
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: inline-block;
+    margin-top: 27px;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    margin-top: 27px;
+  }
+}
