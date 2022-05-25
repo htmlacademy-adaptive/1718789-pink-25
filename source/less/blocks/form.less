@@ -37,14 +37,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 45px;
+    padding-top: 80px;
+    padding-bottom: 57px;
     max-width: 500px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 66px;
+    padding-bottom: 70px;
     max-width: 760px;
   }
 }
@@ -68,8 +68,6 @@
   position: relative;
   padding: 0;
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 44px;
   font-size: 18px;
   line-height: 30px;
   border: none;
@@ -90,14 +88,10 @@
   margin: 0 auto;
   margin-bottom: 43px;
   width: 280px;
-  padding-top: 35px;
-  padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
-    padding-top: 72px;
-    padding-bottom: 26px;
-    margin-bottom: 51px;
+    margin-bottom: 70px;
     outline: none;
     order: -1;
   }
@@ -124,23 +118,23 @@
 .form__fieldset-achievements {
   margin: 0 auto;
   margin-bottom: 43px;
-  padding-top: 38px;
-  padding-bottom: 42px;
+  padding: 43px 0;
 
   @media (max-width: @mobile-width-only) {
     background-color: @ultra-light-gray;
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 51px;
-    padding-top: 27px;
-    padding-bottom: 26px;
+    margin-bottom: 70px;
+    padding-top: 54px;
+    padding-bottom: 50px;
     width: 620px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 69px;
+    padding-bottom: 57px;
     flex-basis: 940px;
     width: 940px;
   }
@@ -150,8 +144,44 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    column-gap: 57px;
+    grid-template-areas: "shark chuck tower" "beach souvenir hotel";
     row-gap: 52px;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(1) {
+  @media (min-width: @desktop-width) {
+    grid-area: shark;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    grid-area: beach;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    grid-area: chuck;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(4) {
+  @media (min-width: @desktop-width) {
+    grid-area: souvenir;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(5) {
+  @media (min-width: @desktop-width) {
+    grid-area: tower;
+  }
+}
+
+.form__fieldset-achievements .form__item:nth-child(6) {
+  @media (min-width: @desktop-width) {
+    grid-area: hotel;
   }
 }
 
@@ -172,14 +202,14 @@
     width: 620px;
     padding: 46px 60px 27px;
     order: 1;
-    margin-bottom: 51px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
     flex-basis: 940px;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 69px;
   }
 }
 
@@ -248,7 +278,7 @@
 
 .form__fieldset-contacts .form__input[type="tel"] {
   @media (min-width: @tablet-width) {
-    background: url("../../img/form-phonr-icon.svg") no-repeat 458px center;
+    background: url("../img/form-phonr-icon.svg") no-repeat 458px center;
     z-index: 3;
   }
 
@@ -259,7 +289,7 @@
 
 .form__fieldset-contacts .form__input[type="email"] {
   @media (min-width: @tablet-width) {
-    background: url("../../img/form-mail-icon.svg") no-repeat 458px center;
+    background: url("../img/form-mail-icon.svg") no-repeat 458px center;
     z-index: 3;
   }
 
@@ -281,16 +311,18 @@
 
   @media (max-width: @mobile-width-only) {
     background-color: @ultra-light-gray;
+    padding: 42px 0;
   }
 
   @media (min-width: @tablet-width) {
+    padding: 54px 0;
     width: 620px;
     order: 0;
-    margin-bottom: 51px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 69px;
     padding-left: 37px;
     flex-basis: 470px;
     box-sizing: border-box;
@@ -413,6 +445,7 @@
   box-sizing: border-box;
   width: 280px;
   height: 201px;
+  margin-bottom: 52px;
 
   &::placeholder {
     font-family: inherit;
@@ -424,10 +457,11 @@
   @media (min-width: @tablet-width) {
     width: 456px;
     height: 193px;
-    margin: 0 auto;
+    margin: 47px 60px 53px 60px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 44px 60px 45px 60px;
     width: 816px;
     height: 124px;
   }

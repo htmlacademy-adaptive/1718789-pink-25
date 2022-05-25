@@ -5,11 +5,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 276px;
+    column-gap: 45px;
     padding-top: 57px;
     padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-rows: 343px;
     padding-bottom: 57px;
     margin-bottom: 28px;
   }
@@ -21,9 +24,6 @@
 
 .photo-editor__image {
   @media (min-width: @tablet-width) {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
     grid-row: 1 / 3;
   }
 
@@ -82,9 +82,13 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 68px 207px;
+    grid-template-columns: 55px 220px;
     min-height: 56px;
     align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 92px 318px;
   }
 
   &--active {
@@ -119,6 +123,8 @@
 
 .photo-editor__tools-button {
   border: none;
+  padding: 0;
+  background-color: transparent;
 }
 
 .photo-editor__tools-label {
@@ -211,8 +217,8 @@
 }
 
 .photo-editor__buttons {
-  justify-self: center;
   align-self: end;
+  grid-column-start: 2;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -226,6 +232,7 @@
   min-height: 55px;
   font-size: 18px;
   line-height: 18px;
+  background-color: transparent;
 
   &:not(:last-child) {
     margin-bottom: 12px;
@@ -246,7 +253,6 @@
 
   &--submit {
     color: @pink;
-    background-color: @white;
     border-color: @pink;
   }
 
