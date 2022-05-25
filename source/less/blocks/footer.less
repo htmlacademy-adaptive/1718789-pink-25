@@ -131,6 +131,19 @@
   align-items: center;
 }
 
+.footer__copyright-link {
+  fill: @pink;
+
+  &:hover,
+  &:focus-visible {
+    fill: @gray;
+  }
+
+  &:active {
+    fill: fade(@gray, 30%);
+  }
+}
+
 .footer__copyright-text {
   margin: 0;
   margin-right: 15px;
