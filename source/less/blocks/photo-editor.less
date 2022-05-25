@@ -5,12 +5,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 276px;
     column-gap: 45px;
     padding-top: 57px;
     padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-rows: 343px;
     padding-bottom: 57px;
     margin-bottom: 28px;
   }
@@ -216,6 +218,7 @@
 
 .photo-editor__buttons {
   align-self: end;
+  grid-column-start: 2;
 
   @media (min-width: @desktop-width) {
     display: flex;
