@@ -5,6 +5,14 @@
 }
 
 .main-nav__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     width: 940px;
@@ -16,7 +24,7 @@
   display: block;
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
   z-index: 15;
   width: 92px;
   height: 66px;
@@ -26,7 +34,7 @@
 
   @media (min-width: @tablet-width) {
     height: 110px;
-    right: 40px;
+    right: 0;
   }
 
   @media (min-width: @desktop-width) {

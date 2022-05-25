@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.build = exports.styles = void 0;
+exports["default"] = exports.build = exports.sprite = exports.styles = void 0;
 
 var _gulp = _interopRequireDefault(require("gulp"));
 
@@ -75,16 +75,14 @@ var createWebp = function createWebp() {
 }; //svg
 
 
-var svg = function svg() {
-  return _gulp["default"].src('source/img/**/*.svg', '!source/img/logo/*.svg', '!source/img/tools/*.svg').pipe((0, _gulpSvgmin["default"])()).pipe(_gulp["default"].dest('build/img'));
-};
-
 var sprite = function sprite() {
-  return _gulp["default"].src(['source/img/logo/*.svg', 'source/img/tools/*.svg']).pipe((0, _gulpSvgmin["default"])()).pipe((0, _gulpSvgstore["default"])({
+  return _gulp["default"].src('source/img/**/*.svg').pipe((0, _gulpSvgmin["default"])()).pipe((0, _gulpSvgstore["default"])({
     inlineSvg: true
   })).pipe((0, _gulpRename["default"])('sprite.svg')).pipe(_gulp["default"].dest('build/img'));
 }; //Copy
 
+
+exports.sprite = sprite;
 
 var copy = function copy(done) {
   _gulp["default"].src(['source/fonts/*.{woff2,woff}', 'source/*.ico', 'source/*.webmanifest'], {
