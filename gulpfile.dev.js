@@ -76,7 +76,7 @@ var createWebp = function createWebp() {
 
 
 var svg = function svg() {
-  return _gulp["default"].src('source/img/**/*.svg').pipe((0, _gulpSvgmin["default"])()).pipe(_gulp["default"].dest('build/img', '!source/img/logo/*.svg', '!source/img/tools/*.svg'));
+  return _gulp["default"].src('source/img/**/*.svg', '!source/img/logo/*.svg', '!source/img/tools/*.svg').pipe((0, _gulpSvgmin["default"])()).pipe(_gulp["default"].dest('build/img'));
 };
 
 var sprite = function sprite() {
