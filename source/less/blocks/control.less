@@ -7,6 +7,11 @@
     padding-left: 119px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-left: 122px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -21,6 +26,10 @@
 
     @media (min-width: @tablet-width) {
       margin-left: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -118px;
     }
   }
 

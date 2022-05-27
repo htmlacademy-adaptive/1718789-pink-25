@@ -64,6 +64,10 @@
         <div class="catalog__panorama">
           <div class="catalog__panorama-images">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.webp 1x, img/catalog/panorama-desktop@2x.webp 2x" width="1200" height="506">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.webp 1x, img/catalog/panorama-tablet@2x.webp 2x" width="660" height="509">
+              <source type="image/webp" srcset="img/catalog/panorama-catalog.webp 1x, img/catalog/panorama-catalog@2x.webp 2x" width="320" height="137">
+
               <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x" width="1200" height="506">
               <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
               <img class="catalog__image-panorama catalog__image-panorama--mobile" src="img/catalog/panorama-catalog.jpg" srcset="img/catalog/panorama-catalog@2x.jpg" alt="Фотография панорамы" width="320" height="137">
@@ -78,9 +82,12 @@
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!</p>
               <div class="catalog__post-likes catalog__post-likes--panorama">
-                <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                  <use href="img/sprite.svg#catalog__like-icon"></use>
-                </svg>
+                <button class="catalog__like-button">
+                  <span class="visually-hidden">Поставить отметку нравится</span>
+                  <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                    <use href="img/sprite.svg#catalog__like-icon"></use>
+                  </svg>
+                </button>
                 <p class="catalog__like-text">Нравится: <span class="catalog__like-value">215</span></p>
                 </div>
             </div>
@@ -92,6 +99,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-1.webp 1x, img/catalog/photo-1@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-1.jpg" srcset="img/catalog/photo-1@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -101,9 +112,12 @@
                   <p class="catalog__post-time">(5 часов назад)</p>
                   <p class="catalog__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">356</span></p>
                   </div>
                 </div>
@@ -111,6 +125,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-2.webp 1x, img/catalog/photo-2@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-2.jpg" srcset="img/catalog/photo-2@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -120,9 +138,12 @@
                   <p class="catalog__post-time">(12 часов назад)</p>
                   <p class="catalog__user-text">Соседи будут рады!</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">666</span></p>
                   </div>
                 </div>
@@ -130,6 +151,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-3.webp 1x, img/catalog/photo-3@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-3.jpg" srcset="img/catalog/photo-3@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -139,9 +164,12 @@
                   <p class="catalog__post-time">(20 часов назад)</p>
                   <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">215</span></p>
                   </div>
                 </div>
@@ -149,6 +177,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-4.webp 1x, img/catalog/photo-4@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-4.jpg" srcset="img/catalog/photo-4@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -158,9 +190,12 @@
                   <p class="catalog__post-time">(25 часов назад)</p>
                   <p class="catalog__user-text">Самая кубанская в мире!</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">4</span></p>
                   </div>
                 </div>
@@ -168,6 +203,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.webp 1x, img/catalog/photo-5-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.webp 1x, img/catalog/photo-5-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-5.webp 1x, img/catalog/photo-5@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.jpg 1x, img/catalog/photo-5-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.jpg 1x, img/catalog/photo-5-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-5.jpg" srcset="img/catalog/photo-5@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -177,9 +216,12 @@
                   <p class="catalog__post-time">(40 часов назад)</p>
                   <p class="catalog__user-text catalog__user-text--maksim">Где снег-то?</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">150</span></p>
                   </div>
                 </div>
@@ -187,6 +229,10 @@
 
               <li class="catalog__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.webp 1x, img/catalog/photo-6-desktop@2x.webp 2x" width="300" height="400">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.webp 1x, img/catalog/photo-6-tablet@2x.webp 2x" width="300" height="300">
+                  <source type="image/webp" srcset="img/catalog/photo-6.webp 1x, img/catalog/photo-6@2x.webp 2x" width="280" height="180">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.jpg 1x, img/catalog/photo-6-desktop@2x.jpg 2x" width="300" height="400">
                   <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.jpg 1x, img/catalog/photo-6-tablet@2x.jpg 2x" width="300" height="300">
                   <img class="catalog__user-photo" src="img/catalog/photo-6.jpg" srcset="img/catalog/photo-6@2x.jpg 2x" alt="Фотография машины" width="280" height="180">
@@ -196,9 +242,12 @@
                   <p class="catalog__post-time">(45 часов назад)</p>
                   <p class="catalog__user-text">Всем GM и взаимные лайки!</p>
                   <div class="catalog__post-likes">
-                    <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
-                      <use href="img/sprite.svg#catalog__like-icon"></use>
-                    </svg>
+                    <button class="catalog__like-button">
+                      <span class="visually-hidden">Поставить отметку нравится</span>
+                      <svg class="catalog__like-icon catalog__like-icon--panorama" width="13" height="12">
+                        <use href="img/sprite.svg#catalog__like-icon"></use>
+                      </svg>
+                    </button>
                     <p class="catalog__like-text">Нравится: <span class="catalog__like-value">2560</span></p>
                   </div>
                 </div>
@@ -213,6 +262,9 @@
           <form class="photo-editor">
               <h2 class="visually-hidden">Загрузите свою фотографию!</h2>
               <picture>
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/catalog-forest-tablet.webp 1x, img/catalog/catalog-forest-tablet@2x.webp 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="img/catalog/catalog-forest.webp 1x, img/catalog/catalog-forest@2x.webp 2x" width="280" height="374">
+
                 <source media="(min-width: 660px)" srcset="img/catalog/catalog-forest-tablet.jpg 1x, img/catalog/catalog-forest-tablet@2x.jpg 2x" width="300" height="400">
                 <img class="photo-editor__image" src="img/catalog/catalog-forest.jpg" srcset="img/catalog/catalog-forest@2x.jpg 2x" alt="Фото пользователя для публикации" width="280" height="374">
               </picture>
@@ -221,8 +273,8 @@
                   <ul class="photo-editor__tools-list">
                     <li class="photo-editor__tools-item photo-editor__tools-item--active">
                       <button class="photo-editor__tools-button" type="button">
-                        <svg class="photo-editor__tools-icon photo-editor__tools-icon--crop" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
+                        <svg class="photo-editor__tools-icon photo-editor__tools-icon--crop" width="44" height="44">
+                          <use href="img/sprite.svg#photo-editor-crop"></use>
                         </svg>
                       </button>
                       <label class="photo-editor__tools-label photo-editor__tools-label--active">
