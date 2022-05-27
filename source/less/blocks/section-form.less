@@ -1,0 +1,44 @@
+.section-form {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
+}
+
+.section-form__title {
+  color: @gray;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  span {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 57px;
+    min-width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 70px;
+    min-width: 760px;
+  }
+}

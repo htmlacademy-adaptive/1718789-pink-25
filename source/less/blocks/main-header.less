@@ -1,16 +1,41 @@
 .main-header {
-  background: url("../img/header-background.jpg") no-repeat 50% 0;
+  background: url("../img/header-bg-mobile.jpg") no-repeat 50% 0;
   color: @white;
-  background-color: @blue;
+  background-color: @dark-blue;
   min-height: 733px;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-bg-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 50% bottom 270px;
+    background-size: auto 462px;
+  }
+
   @media (min-width: @tablet-width) {
+    background: url("../img/header-bg-tablet.jpg") no-repeat 50% 0;
+    background-color: @dark-blue;
     min-height: 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-bg-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: auto 729px;
+    }
   }
 
   @media (min-width: @desktop-width) {
+    background: url("../img/header-bg-desktop.png") no-repeat 50% 0;
+    background-color: @dark-blue;
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-bg-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: auto 853px;
+    }
   }
 
   &--form {
