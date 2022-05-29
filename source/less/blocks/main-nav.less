@@ -7,7 +7,7 @@
 .main-nav__wrapper {
   position: relative;
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 660px;
@@ -214,11 +214,16 @@
     display: flex;
     position: static;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     background: none;
     margin-left: auto;
     max-width: 620px;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
   }
 }
 

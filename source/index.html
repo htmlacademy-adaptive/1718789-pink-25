@@ -17,7 +17,7 @@
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="#">
+          <a class="main-nav__logo logo" href="#">
             <svg class="logo__mobile" width="74" height="23">
               <use href="img/sprite.svg#logo__mobile"></use>
             </svg>
@@ -82,7 +82,6 @@
     <main class="main-container">
       <h1 class="visually-hidden">Приложение пинк</h1>
 
-      <div class="advantages__wrapper">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
         <div class="page-wrapper">
@@ -94,6 +93,8 @@
               <li class="advantages__item">
                 <h3 class="advantages__title">Поднимает настроение</h3>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/advantages-phone-desktop1.webp 1x, img/advantages/advantages-phone-desktop1@2x.webp 2x">
+
                   <img class="advantages__image" src="img/advantages/advantages-phone-desktop1.png" srcset="img/advantages/advantages-phone-desktop1@2x.png 2x" width="186" height="382" alt="Фотография до редактирования">
                 </picture>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -101,6 +102,8 @@
               <li class="advantages__item">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/advantages-phone-desktop2.webp 1x, img/advantages/advantages-phone-desktop2@2x.webp 2x">
+
                   <img class="advantages__image" src="img/advantages/advantages-phone-desktop2.png" srcset="img/advantages/advantages-phone-desktop2@2x.png 2x" width="186" height="382" alt="Редактированная фотография">
                 </picture>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, <br>чтобы усилить эффект</p>
@@ -108,6 +111,8 @@
               <li class="advantages__item">
                 <h3 class="advantages__title">Заводит новых друзей</h3>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/advantages-phone-desktop3.webp 1x, img/advantages/advantages-phone-desktop3@2x.webp 2x">
+
                   <img class="advantages__image" src="img/advantages/advantages-phone-desktop3.png" srcset="img/advantages/advantages-phone-desktop3@2x.png 2x" width="186" height="382" alt="Редактированная фотография">
                 </picture>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -115,7 +120,6 @@
             </ul>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="effect">
@@ -123,14 +127,14 @@
           <div class="effect__description">
             <div class="effect__info">
               <h2 class="effect__title">Эффект на 24 часа!</h2>
-              <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <p class="effect__text">Британские ученые провели исследования<br> и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="effect__link" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="page-wrapper">
           <div class="feedback__wrapper">
@@ -144,7 +148,7 @@
             <button class="feedback__slider-button feedback__slider-button--next"></button>
           </div>
 
-          <div class="feeedback__toggles slider__toggles">
+          <div class="slider__toggles">
             <button class="slider__toggle slider__toggle--current"></button>
             <button class="slider__toggle"></button>
             <button class="slider__toggle"></button>
@@ -153,7 +157,7 @@
       </section>
 
       <section class="price">
-        <div class="price__wrapper">
+        <div class="price__wrapper slider">
           <h2 class="visually-hidden">Прайс</h2>
           <div class="price__list">
             <section class="price__item">
@@ -252,7 +256,7 @@
       <h2 class="visually-hidden">Ссылки на соцсети</h2>
       <div class="page-wrapper">
         <div class="footer__container">
-          <a class="footer__logo" href="index.html">
+          <a class="footer__logo logo" href="index.html">
             <svg class="logo__footer-tablet" width="145" height="40">
               <use href="img/sprite.svg#logo__footer-tablet"></use>
             </svg>
@@ -274,8 +278,8 @@
             </ul>
           </div>
           <div class="footer__copyright">
-            <p class="footer__copyright-text">Разработано:</p>
-            <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="footer__copyright-text">Разработано</p>
+            <a class="footer__copyright-link logo" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Academy</span>
               <svg class="logo__footer-academy" width="27" height="34">
                 <use href="img/sprite.svg#logo__footer-academy"></use>

@@ -1,17 +1,18 @@
 .price {
-  background: url("../img/advantages/advantages-gray-background.svg") no-repeat 50% 7%;
+  background: url("../../img/advantages/index-grey-background.svg") no-repeat 50% 2%;
   background-size: cover;
-  padding: 83px 0 55px 0;
+  padding: 141px 0 48px 0;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/advantages/advantages-gray-background.svg") no-repeat 50% 4%;
+    background: url("../../img/advantages/index-gray-background-tablet.svg") no-repeat 50% 4%;
     background-size: cover;
-    padding: 117px 0 70px 0;
+    padding: 111px 0 70px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 159px 0 98px 0;
+    padding: 158px 0 98px 0;
+    background-position: 50% 6%;
   }
 }
 
@@ -128,6 +129,10 @@
   font-weight: 700;
   margin-top: 19px;
   margin-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__cost {
@@ -138,6 +143,11 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    margin-bottom: 28px;
   }
 }
 
@@ -160,7 +170,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 21px;
   padding-left: 20px;
   padding-right: 50px;
@@ -177,8 +187,8 @@
     height: 27px;
     background-image: url("../img/price-feature-no.svg");
     position: absolute;
-    top: 19px;
-    left: 228px;
+    top: 15px;
+    left: 229px;
   }
 
   &--yes::after {
@@ -188,8 +198,8 @@
     height: 21px;
     background-image: url("../img/price-feature-yes.svg");
     position: absolute;
-    top: 16px;
-    left: 230px;
+    top: 18px;
+    left: 227px;
   }
 
   @media (min-width: @tablet-width) {
