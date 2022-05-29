@@ -1,7 +1,7 @@
 .control {
   display: block;
   position: relative;
-  padding-left: 59px;
+  padding-left: 69px;
 
   @media (min-width: @tablet-width) {
     padding-left: 119px;
@@ -9,7 +9,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-left: 122px;
+    margin-left: 93px;
   }
 
   &::before {
@@ -34,6 +34,14 @@
   }
 
   &--checkbox {
+    @media (max-width: @mobile-width-only) {
+      padding-left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 112px;
+    }
+
     &::before {
       border-radius: 1px;
     }
@@ -57,6 +65,10 @@
       border-color: @pink;
     }
   }
+}
+
+.control__input--checkbox:focus ~ .control__label::before {
+  border-color: @gray;
 }
 
 .control__input--checkbox:checked + .control__label {
@@ -87,8 +99,12 @@
     width: 15px;
     height: 15px;
     top: 5px;
-    left: -47px;
+    left: -57px;
     border-radius: 50%;
     background-color: @pink;
+
+    @media (min-width: @tablet-width) {
+      left: -47px;
+    }
   }
 }

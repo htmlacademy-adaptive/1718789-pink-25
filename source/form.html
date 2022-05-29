@@ -60,7 +60,7 @@
       <main class="main-container">
         <section class="section-form">
           <h2 class="visually-hidden">Заполните нашу форму</h2>
-            <p class="section-form__title">Поделитесь своей историей и получите шанс выиграть
+            <p class="section-form__title">Поделитесь своей историей и получите шанс<br> выиграть<br>
               ценный приз — 1000 миль на вашу бонусную карту!
               <span>Пожалуйста, заполните форму ниже:</span></p>
             <form class="form" action="https://echo.htmlacademy.ru/" name="photo-contest" method="post">
@@ -71,21 +71,21 @@
                   <li class="form__item">
                     <label class="form__label">
                       <span class="form__label-name">Фамилия:</span>
-                      <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                      <input class="form__input form__input--name" type="text" name="surname" placeholder="Укажите фамилию *" required>
                     </label>
                   </li>
 
                   <li class="form__item">
                     <label class="form__label">
                       <span class="form__label-name">Имя:</span>
-                      <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+                      <input class="form__input form__input--name" type="text" name="name" placeholder="Введите ваше имя *" required>
                     </label>
                   </li>
 
                   <li class="form__item">
                     <label class="form__label">
                       <span class="form__label-name">Отчество:</span>
-                      <input class="form__input" type="text" name="middlename" placeholder="Ну и отчество тоже">
+                      <input class="form__input form__input--name" type="text" name="middlename" placeholder="Ну и отчество тоже">
                     </label>
                   </li>
                 </ul>
@@ -198,7 +198,7 @@
 
             <div class="form__buttons">
               <button class="form__submit form__button" type="submit">Отправить форму</button>
-              <span class="form__description"><span>*</span> - Обязательные поля</span>
+              <span class="form__description"><span>*</span> - Обязательные <span class="form__description-span">для заполнения права</span> поля</span>
             </div>
 
             </form>
@@ -208,7 +208,7 @@
       <footer class="footer">
         <h2 class="visually-hidden">Ссылки на соцсети</h2>
         <div class="page-wrapper">
-          <div class="footer__container">
+          <div class="footer__container footer__container--form">
             <a class="footer__logo logo" href="index.html">
               <svg class="logo__footer-tablet" width="145" height="40">
                 <use href="img/sprite.svg#logo__footer-tablet"></use>
@@ -218,7 +218,7 @@
               </svg>
             </a>
             <div class="footer__social">
-              <ul class="footer__social-list">
+              <ul class="footer__social-list footer__social-list--form">
                 <li class="footer__social-item">
                   <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
                 </li>

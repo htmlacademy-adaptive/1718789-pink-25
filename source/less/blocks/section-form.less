@@ -18,8 +18,8 @@
   text-align: center;
   margin: 0 auto;
   width: 280px;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 42px;
+  padding-bottom: 35px;
 
   span {
     display: none;
@@ -31,14 +31,23 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-bottom: 57px;
     min-width: 500px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 83px;
     min-width: 760px;
+    padding-top: 91px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      display: block;
+    }
   }
 }
